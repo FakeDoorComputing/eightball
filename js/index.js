@@ -22,7 +22,7 @@ $(document).on("deviceready",function(){
   });
 
   // tell onShake what to do when a shake is detected
-	var onShake=function(){
+	function onShake(){
     if(!paused){
       runNow()
     };
