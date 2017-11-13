@@ -20,7 +20,7 @@ $(document).on("pagecreate","#pageOne",function(){
 				navigator.vibrate(250);
 			};
 			if(ranNum>15){
-				navigator.vibrate([250,250]};
+				navigator.vibrate([250,250]);
 			};
           $("#question").text(textBoxVal).fadeIn("slow")
         });
