@@ -3,7 +3,11 @@ var answers=["It is certain","It is decidedly so","Without a doubt","Yes definit
 "Outlook good","Yes","Signs point to yes","Reply hazy try again","Ask again later","Better not tell you now","Cannot predict now",
 "Concentrate and ask again","Don't count on it","My reply is no","My sources say no","Outlook not so good","Very doubtful"];
 
+//cordova device ready
 $(document).on("deviceready",function(){
+
+//html device ready
+//$("document").ready(function(){
 
   // add event listeners for pause and resume
 	document.addEventListener("resume", onResume, false);
@@ -14,8 +18,8 @@ $(document).on("deviceready",function(){
 
   // add event listener for when the button is pressed
   $("#btn").on("tap",function(){
-    runNow());
-  };
+    runNow()
+  });
 
   // tell onShake what to do when a shake is detected
 	var onShake=function(){
