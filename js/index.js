@@ -12,6 +12,16 @@ $(document).on("pagecreate","#pageOne",function(){
       if(textBoxVal!=""){
         ranNum=Math.round(Math.random()*20);
         $("#question").fadeOut("slow",function(){
+			if(ranNum<11){
+				navigator.notification.beep(1);
+			};
+			else if(ranNum>10&&ranNum<16){
+				navigator.notifivation.beep(1);
+				navigator.vibrate(250);
+			};
+			else if(ranNum>15){
+			navigator.vibrate([250,250]};
+			};
           $("#question").text(textBoxVal).fadeIn("slow")
         });
         $("#textBox").val("");
